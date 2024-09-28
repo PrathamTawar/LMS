@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.7rem;
+    box-shadow: 0px 0px 10px black;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+.navbar-links
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.navbar img{
+    height: 3rem;
+    border-radius: 100px;
+}
+.navbar div a{
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    .button{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 30px;
+    }
+    .practicelink{
+        margin-left: -50px;
+    }
+}
